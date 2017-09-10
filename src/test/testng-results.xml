@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="5" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[successfully sing into the user account]]>
+    </line>
+    <line>
+      <![CDATA[Review Text has been confirmed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="148598" started-at="2017-09-06T14:13:18Z" finished-at="2017-09-06T14:15:47Z">
+    <groups>
+    </groups>
+    <test name="WalletHubTest" duration-ms="148598" started-at="2017-09-06T14:13:18Z" finished-at="2017-09-06T14:15:47Z">
+      <class name="com.wallethub.testcases.WalletHubTestCase">
+        <test-method status="PASS" signature="initialiseObjects(java.lang.String, java.lang.String)[pri:0, instance:com.wallethub.testcases.WalletHubTestCase@3532ec19]" name="initialiseObjects" is-config="true" duration-ms="29835" started-at="2017-09-06T19:43:18Z" finished-at="2017-09-06T19:43:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://wallethub.com/profile/test_insurance_company/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseObjects -->
+        <test-method status="PASS" signature="verifyWalletHubLogin()[pri:0, instance:com.wallethub.testcases.WalletHubTestCase@3532ec19]" name="verifyWalletHubLogin" duration-ms="4770" started-at="2017-09-06T19:43:48Z" finished-at="2017-09-06T19:43:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[successfully sing into the user account]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyWalletHubLogin -->
+        <test-method status="FAIL" signature="verifyStarGlowAndClick()[pri:0, instance:com.wallethub.testcases.WalletHubTestCase@3532ec19]" name="verifyStarGlowAndClick" duration-ms="67028" started-at="2017-09-06T19:43:53Z" finished-at="2017-09-06T19:45:00Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class='wh-rating-choices' or @class='wh-rating-choices-holder']/a[5] (tried for 30 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-QJJH5DN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amar\AppData\Local\Temp\rust_mozprofile.jsN4bjSpWwpU, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0.3, platformVersion=10.0, moz:processID=23080, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: f6c12d3d-1925-4d5a-b53a-c3e15293e62a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class='wh-rating-choices' or @class='wh-rating-choices-holder']/a[5] (tried for 30 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-QJJH5DN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amar\AppData\Local\Temp\rust_mozprofile.jsN4bjSpWwpU, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0.3, platformVersion=10.0, moz:processID=23080, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: f6c12d3d-1925-4d5a-b53a-c3e15293e62a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.wallethub.util.DriverOperations.click(DriverOperations.java:36)
+	at com.wallethub.modules.WalletHubMain.clickOnStar(WalletHubMain.java:55)
+	at com.wallethub.testcases.WalletHubTestCase.verifyStarGlowAndClick(WalletHubTestCase.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStarGlowAndClick -->
+        <test-method status="PASS" signature="verifySelectPolicy()[pri:0, instance:com.wallethub.testcases.WalletHubTestCase@3532ec19]" name="verifySelectPolicy" duration-ms="20081" started-at="2017-09-06T19:45:00Z" finished-at="2017-09-06T19:45:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySelectPolicy -->
+        <test-method status="FAIL" signature="verifyWriteReview()[pri:0, instance:com.wallethub.testcases.WalletHubTestCase@3532ec19]" name="verifyWriteReview" duration-ms="21088" started-at="2017-09-06T19:45:20Z" finished-at="2017-09-06T19:45:41Z">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[No modal dialog is currently open
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-QJJH5DN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amar\AppData\Local\Temp\rust_mozprofile.jsN4bjSpWwpU, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0.3, platformVersion=10.0, moz:processID=23080, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: f6c12d3d-1925-4d5a-b53a-c3e15293e62a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-QJJH5DN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amar\AppData\Local\Temp\rust_mozprofile.jsN4bjSpWwpU, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0.3, platformVersion=10.0, moz:processID=23080, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: f6c12d3d-1925-4d5a-b53a-c3e15293e62a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1029)
+	at com.wallethub.util.DriverOperations.handlePopUp(DriverOperations.java:90)
+	at com.wallethub.modules.WalletHubMain.writeReview(WalletHubMain.java:108)
+	at com.wallethub.testcases.WalletHubTestCase.verifyWriteReview(WalletHubTestCase.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWriteReview -->
+        <test-method status="PASS" signature="confirmReview()[pri:0, instance:com.wallethub.testcases.WalletHubTestCase@3532ec19]" name="confirmReview" duration-ms="5761" started-at="2017-09-06T19:45:41Z" finished-at="2017-09-06T19:45:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Review Text has been confirmed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- confirmReview -->
+      </class> <!-- com.wallethub.testcases.WalletHubTestCase -->
+    </test> <!-- WalletHubTest -->
+  </suite> <!-- Suite -->
+</testng-results>

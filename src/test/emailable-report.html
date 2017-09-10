@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">WalletHubTest</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">148.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">WalletHubTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.wallethub.testcases.WalletHubTestCase</td><td><a href="#m1"><b>verifyStarGlowAndClick</b>  </a></td><td class="numi">1</td><td>1504707233334</td><td class="numi">67028</td></tr><tr class="failedodd"><td><a href="#m2"><b>verifyWriteReview</b>  </a></td><td class="numi">1</td><td>1504707320451</td><td class="numi">21088</td></tr>
+<tr><th colspan="4">WalletHubTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.wallethub.testcases.WalletHubTestCase</td><td><a href="#m3"><b>verifyWalletHubLogin</b>  </a></td><td class="numi">1</td><td>1504707228561</td><td class="numi">4770</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifySelectPolicy</b>  </a></td><td class="numi">1</td><td>1504707300367</td><td class="numi">20081</td></tr><tr class="passedodd"><td><a href="#m5"><b>confirmReview</b>  </a></td><td class="numi">1</td><td>1504707341545</td><td class="numi">5761</td></tr>
+</table>
+<h1>WalletHubTest</h1>
+<h2 id="m1">com.wallethub.testcases.WalletHubTestCase:verifyWriteReview</h2>
+<div style="padding-left:3em">
+<p>No modal dialog is currently open
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-QJJH5DN&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amar\AppData\Local\Temp\rust_mozprofile.jsN4bjSpWwpU, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0.3, platformVersion=10.0, moz:processID=23080, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: f6c12d3d-1925-4d5a-b53a-c3e15293e62a</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1029)
+<br/>at com.wallethub.util.DriverOperations.handlePopUp(DriverOperations.java:90)
+<br/>at com.wallethub.modules.WalletHubMain.writeReview(WalletHubMain.java:108)
+<br/>at com.wallethub.testcases.WalletHubTestCase.verifyWriteReview(WalletHubTestCase.java:42)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.wallethub.testcases.WalletHubTestCase:verifyStarGlowAndClick</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class=&apos;wh-rating-choices&apos; or @class=&apos;wh-rating-choices-holder&apos;]/a[5] (tried for 30 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-QJJH5DN&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\amar\AppData\Local\Temp\rust_mozprofile.jsN4bjSpWwpU, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0.3, platformVersion=10.0, moz:processID=23080, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: f6c12d3d-1925-4d5a-b53a-c3e15293e62a</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+<br/>at com.wallethub.util.DriverOperations.click(DriverOperations.java:36)
+<br/>at com.wallethub.modules.WalletHubMain.clickOnStar(WalletHubMain.java:55)
+<br/>at com.wallethub.testcases.WalletHubTestCase.verifyStarGlowAndClick(WalletHubTestCase.java:29)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.wallethub.testcases.WalletHubTestCase:verifyWalletHubLogin</h2>
+<div style="padding-left:3em">
+successfully sing into the user account<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.wallethub.testcases.WalletHubTestCase:confirmReview</h2>
+<div style="padding-left:3em">
+Review Text has been confirmed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.wallethub.testcases.WalletHubTestCase:verifySelectPolicy</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
